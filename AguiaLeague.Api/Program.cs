@@ -1,5 +1,6 @@
 using AguiaLeague.Data;
 using AguiaLeague.Data.Repositories;
+using AguiaLeague.Domain.Interfaces;
 using AguiaLeague.Domain.Interfaces.Repositories;
 using AguiaLeague.Domain.Interfaces.Services;
 using AguiaLeague.Domain.Interfaces.Services.Auth;
@@ -31,7 +32,10 @@ builder.Services.AddEntityFrameworkNpgsql()
     });
 
 // Injeção de dependências
-InjetarDependencias(builder);
+builder.Services.Scan(x => x.FromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
+    .AddClasses(classes => classes.AssignableTo<IBaseScoped>())
+    .AsImplementedInterfaces()
+    .WithScopedLifetime());
 
 builder.Services.AddCors(options =>
 {
@@ -64,12 +68,3 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-
-#region Injeção de dependências
-void InjetarDependencias(WebApplicationBuilder b)
-{
-    b.Services.AddScoped<ITimeService, TimeService>();
-    b.Services.AddScoped<ITimeRepository, TimeRepository>();
-    b.Services.AddScoped<IAuthService, AuthService>();
-}
-#endregion
