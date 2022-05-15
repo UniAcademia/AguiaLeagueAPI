@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AguiaLeague.Domain\AguiaLeague.Domain.csproj" />
+    <Folder Include="AppServices\Auth\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Interfaces\AppServices\Auth\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AguiaLeague.CrossCutting\AguiaLeague.CrossCutting.csproj" />
+    <ProjectReference Include="..\AguiaLeague.Data\AguiaLeague.Data.csproj" />
   </ItemGroup>
 
 </Project>

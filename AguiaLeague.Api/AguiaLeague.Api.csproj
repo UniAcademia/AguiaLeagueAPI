@@ -19,8 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AguiaLeague.Application\AguiaLeague.Application.csproj" />
+    <ProjectReference Include="..\AguiaLeague.CrossCutting\AguiaLeague.CrossCutting.csproj" />
     <ProjectReference Include="..\AguiaLeague.Data\AguiaLeague.Data.csproj" />
-    <ProjectReference Include="..\AguiaLeague.Domain\AguiaLeague.Domain.csproj" />
   </ItemGroup>
 
 </Project>
