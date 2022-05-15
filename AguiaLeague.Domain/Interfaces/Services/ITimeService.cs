@@ -3,7 +3,7 @@ using FluentValidation.Results;
 
 namespace AguiaLeague.Domain.Interfaces.Services;
 
-public interface ITimeService : IDisposable
+public interface ITimeService : IDisposable, IBaseScoped
 {
     ValidationResult Adicionar(Time time);
 

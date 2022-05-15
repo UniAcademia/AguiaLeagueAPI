@@ -2,7 +2,7 @@
 
 namespace AguiaLeague.Domain.Interfaces.Services.Auth;
 
-public interface IAuthService : IDisposable
+public interface IAuthService : IDisposable, IBaseScoped
 {
     Task<DiscordUserValueObject?> Autenticar(string code);
 }
