@@ -10,7 +10,6 @@
     <Folder Include="Interfaces\Repositories\" />
     <Folder Include="Interfaces\Services\Auth\" />
     <Folder Include="Models\" />
-    <Folder Include="ValueObjects\" />
     <Folder Include="Services\Auth\" />
   </ItemGroup>
 
@@ -19,6 +18,10 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AguiaLeague.CrossCutting\AguiaLeague.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>

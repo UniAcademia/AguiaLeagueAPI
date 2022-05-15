@@ -1,12 +1,6 @@
 using AguiaLeague.Data;
-using AguiaLeague.Data.Repositories;
 using AguiaLeague.Domain.Interfaces;
-using AguiaLeague.Domain.Interfaces.Repositories;
-using AguiaLeague.Domain.Interfaces.Services;
-using AguiaLeague.Domain.Interfaces.Services.Auth;
 using AguiaLeague.Domain.Models;
-using AguiaLeague.Domain.Services;
-using AguiaLeague.Domain.Services.Auth;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Logging;
