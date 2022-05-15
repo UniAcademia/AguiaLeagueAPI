@@ -51,6 +51,8 @@ public class AuthService : IAuthService
             Content = new FormUrlEncodedContent(parametros)
         };
         var resposta = await client.SendAsync(req).ConfigureAwait(false);
+        
+        //Se der pau, verificar se o client_secret está certo no appsettings
         if (!resposta.IsSuccessStatusCode) return null;
 
         var content = JsonConvert.DeserializeObject<dynamic>(await resposta.Content.ReadAsStringAsync());
