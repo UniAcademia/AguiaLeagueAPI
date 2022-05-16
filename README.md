@@ -1,10 +1,12 @@
-# Rodando o projeto no Visual Studio 2022:
+# AguiaLeagueAPI - ![](https://github.com/UniAcademia/AguiaLeagueAPI/actions/workflows/dotnet.yml/badge.svg) ![](https://github.com/UniAcademia/AguiaLeagueAPI/actions/workflows/codeql-analysis.yml/badge.svg) 
+
+## Rodando o projeto no Visual Studio 2022:
 1. Abra o Package Manager Console, selecione o projeto `Data` e rode o comando `Update-Database`. Isso irá criar o banco de dados Postgres  
 <img src="https://i.imgur.com/DQL6Yun.png"/>
 
 2. Execute o projeto `AguiaLeague.API`
 
-# Tecnologias utilizadas:
+## Tecnologias utilizadas:
 - ASP.NET 6.0
 - ASP.NET WebApi Core com autenticação JWT Bearer
 - Entity Framework Core 6
