@@ -1,4 +1,5 @@
-﻿using AguiaLeague.Domain.Models;
+﻿using AguiaLeague.CrossCutting.Interfaces;
+using AguiaLeague.Domain.Models;
 using FluentValidation.Results;
 
 namespace AguiaLeague.Domain.Interfaces.Services;

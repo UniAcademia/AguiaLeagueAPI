@@ -1,4 +1,5 @@
-﻿using AguiaLeague.Domain.ValueObjects;
+﻿using AguiaLeague.CrossCutting.Interfaces;
+using AguiaLeague.Domain.ValueObjects;
 
 namespace AguiaLeague.Domain.Interfaces.Services.Auth;
 

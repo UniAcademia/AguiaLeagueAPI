@@ -9,9 +9,8 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
     public void Configure(EntityTypeBuilder<User> builder)
     {
         builder.HasKey(m => m.Id);
-        builder.Property(m => m.Nome).IsRequired();
-        builder.Property(m => m.Tag).IsRequired();
+        builder.Property(m => m.Discord).IsRequired();
 
-        builder.ToTable("User");
+        builder.ToTable("Users");
     }
 }

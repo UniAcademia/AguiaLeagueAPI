@@ -11,4 +11,9 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         return Obter(x => x.Id == id).FirstOrDefault();
     }
+    
+    public User? ObterPorId(ulong id, string[]? includes = null)
+    {
+        return Obter(x => x.Discord == id).FirstOrDefault();
+    }
 }

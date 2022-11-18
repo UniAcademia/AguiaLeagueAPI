@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using AguiaLeague.CrossCutting.Interfaces;
 
 namespace AguiaLeague.Domain.Interfaces.Repositories;
 
