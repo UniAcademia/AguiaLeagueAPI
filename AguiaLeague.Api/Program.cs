@@ -1,5 +1,5 @@
+using AguiaLeague.CrossCutting.Interfaces;
 using AguiaLeague.Data;
-using AguiaLeague.Domain.Interfaces;
 using AguiaLeague.Domain.Models;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
